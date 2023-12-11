@@ -126,7 +126,7 @@ header .logo span {
 
 header .navbar a {
     display: block;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #fff;
     margin: 2rem 0;
     transition: all .3s ease;
@@ -835,6 +835,19 @@ header .follow a:hover {
 @media (max-width: 1900px) {
     .contact .row {
         margin-bottom: 50px;
+    }
+
+    .about .row-1 .content .box-container {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .about .row-1 .content .box-container .box p span {
+        font-size: 14px;
+    }
+
+    .about .row-1 .content p {
+        font-size: 14px;
     }
 }
 

@@ -73,3 +73,19 @@ $('a[href="#"]').on('click', function (e) {
     );
 
 });
+
+
+// ===== typed js =====
+const typed = new Typed(".multiple-text", {
+  strings: [
+    "B.Sc Engineer of CSE",
+    "Web Developer",
+    "Frontend Development",
+    "Digital Marketing",
+    "Blogger",
+  ],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
