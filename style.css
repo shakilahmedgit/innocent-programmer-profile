@@ -264,6 +264,22 @@ header .follow a:hover {
     border: 5px solid #5DFF33;
     border-radius: 100%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-2.4rem);
+    }
+    0% 
+    {
+        transform: translateY(0);
+    }
 }
 
 .home .content .hi {
@@ -321,6 +337,7 @@ header .follow a:hover {
     border: 5px solid #fff;
     border-radius: 0.5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    animation: aboutImage 4s ease-in-out infinite;
 }
 
 .about .row-1 .content {
@@ -763,6 +780,22 @@ header .follow a:hover {
     position: fixed;
     bottom: 1.2rem;
     right: 2rem;
+    animation: topButton 3s ease-in-out infinite;    
+}
+
+@keyframes topButton {
+    0% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-2.4rem);
+    }
+    0% 
+    {
+        transform: translateY(0);
+    }
 }
 
 .top i {
@@ -834,6 +867,14 @@ header .follow a:hover {
 
     .contact .row {
         margin-bottom: 50px;
+    }
+
+    .about .row-1 .content .box-container .box p span {
+        font-size: 12px;
+    }
+
+    .about .row-1 .content .box-container .box p {
+        font-size: 11px;
     }
 }
 
@@ -962,6 +1003,21 @@ header .follow a:hover {
         height: 28rem;
     }
 
+    @keyframes aboutImage {
+        0% 
+        {
+            transform: translateY(0);
+        }
+        50% 
+        {
+            transform: translateY(-2.4rem);
+        }
+        0% 
+        {
+            transform: translateY(0);
+        }
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -993,6 +1049,21 @@ header .follow a:hover {
         flex: 1 1 30rem;
         padding-right: 0;
         margin-bottom: 15px;
+    }
+    
+    @keyframes aboutImage {
+        0% 
+        {
+            transform: translateY(0);
+        }
+        50% 
+        {
+            transform: translateY(-2.4rem);
+        }
+        0% 
+        {
+            transform: translateY(0);
+        }
     }
 
 }
@@ -1047,6 +1118,21 @@ header .follow a:hover {
     .about .row-1 .image {
         margin-top: 60px;
     }
+    
+    @keyframes aboutImage {
+        0% 
+        {
+            transform: translateY(0);
+        }
+        50% 
+        {
+            transform: translateY(-2.4rem);
+        }
+        0% 
+        {
+            transform: translateY(0);
+        }
+    }
 }
 
 @media (max-width: 350px) {
@@ -1076,6 +1162,21 @@ header .follow a:hover {
 
     .about .row-1 .image {
         margin-top: 60px;
+    }
+
+    @keyframes aboutImage {
+        0% 
+        {
+            transform: translateY(0);
+        }
+        50% 
+        {
+            transform: translateY(-2.4rem);
+        }
+        0% 
+        {
+            transform: translateY(0);
+        }
     }
 
 }
