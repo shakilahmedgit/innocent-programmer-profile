@@ -795,6 +795,12 @@ header .follow a:hover {
 
 /* media queries */
 
+@media (max-width: 1460px) {
+    .about .row-2 .box-container .box {
+        flex: 1 1 19.3rem;
+    }
+}
+
 @media (max-width: 1200px) {
 
     .about .row-1 {
