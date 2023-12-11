@@ -154,8 +154,8 @@ header .follow a:hover {
 
 #menu-bars {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 3rem;
+    right: 3rem;
     z-index: 10000;
     background: var(--main-color);
     color: #fff;
@@ -258,7 +258,7 @@ header .follow a:hover {
 }
 
 .home .image img {
-    width: 100%;
+    /* width: 100%; */
     float: right;
     object-fit: cover;
     border: 5px solid #5DFF33;
@@ -799,9 +799,89 @@ header .follow a:hover {
 
 /* media queries */
 
+@media (max-width: 1900px) {
+    .contact .row {
+        margin-bottom: 50px;
+    }
+}
+
 @media (max-width: 1460px) {
+    
     .about .row-2 .box-container .box {
         flex: 1 1 19.3rem;
+    }
+
+    .home {
+        padding-top: 40px;
+    }
+
+    .home .image {
+        flex: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .image img {
+        width: 70%;
+        float: right;
+        object-fit: cover;
+    }
+    
+    .contact .box-container {
+        margin-bottom: 40px;
+    }
+
+    .contact .row {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1459px) {
+    
+    .home {
+        padding-top: 40px;
+    }
+
+    .home .image {
+        flex: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .home .image img {
+        width: 50%;
+        float: right;
+        object-fit: cover;
+    }
+    
+    .portfolio .box-container .box {
+        flex: 0 1 40rem;
+        height: 27rem;
+    }
+
+    .experience .box-container .box {
+        flex: 0 1 40rem;
+    }
+
+    .contact .box-container .icons {
+        flex: 0 1 40rem;
+    }
+
+    .contact .box-container {
+        margin-bottom: 40px;
+    }
+
+    .contact .row {
+        margin-bottom: 55px;
+    }
+
+    .contact .row .map {
+        display: flex;
+        height: 300px;
     }
 }
 
@@ -857,12 +937,29 @@ header .follow a:hover {
     }
 
     .experience .box-container .box {
-        flex: 1 1 30rem;
+        flex: 0 1 42rem;
         padding-right: 0;
     }
 
     .home {
         padding-top: 50px;
+    }
+
+    .about .row-1 .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .about .row-1 .image img {
+        width: 45%;
+        border-radius: 100%;
+    }
+
+    .portfolio .box-container .box {
+        flex: 0 1 42rem;
+        height: 28rem;
     }
 
 }
@@ -929,6 +1026,27 @@ header .follow a:hover {
         flex: auto;
         margin-bottom: 15px;
     }
+
+    .home .image {
+        flex: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .image img {
+        width: 100%;
+        float: right;
+        object-fit: cover;
+    }
+
+    .about .row-1 .image img {
+        width: 100%;
+    }
+
+    .about .row-1 .image {
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 350px) {
@@ -950,6 +1068,14 @@ header .follow a:hover {
 
     .footer p {
         font-size: 1.5rem;
+    }
+
+    .about .row-1 .image img {
+        width: 100%;
+    }
+
+    .about .row-1 .image {
+        margin-top: 60px;
     }
 
 }
